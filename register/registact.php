@@ -30,7 +30,7 @@ if ($conf != $pass) {
         $lastInsertId = mysqli_query($koneksidb, $sql1);
         if ($lastInsertId) {
             echo "<script>alert('Registrasi berhasil. Sekarang anda bisa login.');</script>"; // Menampilkan pesan alert jika registrasi berhasil
-            echo "<script type='text/javascript'> document.location = '../halamanAwal.html'; </script>"; // Mengalihkan ke halaman login
+            echo "<script type='text/javascript'> document.location = '../index.html'; </script>"; // Mengalihkan ke halaman login
         } else {
             echo "<script>alert('Ops, terjadi kesalahan. Silahkan coba lagi.');</script>"; // Menampilkan pesan alert jika terjadi kesalahan saat menyimpan data ke database
             echo "<script type='text/javascript'> document.location = 'regist.php'; </script>"; // Mengalihkan ke halaman registrasi kembali
