@@ -1,0 +1,99 @@
+/* CSS untuk mengatur tinggi 100% dan menghilangkan margin pada body dan html */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* CSS untuk mengatur tampilan body */
+body {
+  font-family: Arial, sans-serif; /* Mengatur font family untuk teks pada body */
+  background-image: url('loginbg.jpg'); /* Menetapkan gambar latar belakang dengan sumber 'loginbg.jpg' */
+  background-size: cover; /* Menyesuaikan ukuran gambar latar belakang agar mencakup seluruh area body */
+  background-repeat: no-repeat; /* Mengatur agar gambar latar belakang tidak diulang */
+  background-position: center; /* Mengatur posisi tampilan gambar latar belakang di tengah */
+  height: 100%; /* Menetapkan tinggi body 100% */
+}
+
+/* CSS untuk mengatur tampilan elemen h1 dalam form */
+form h1 img {
+  width: 150px; /* Lebar gambar 150 piksel */
+  height: auto; /* Ketinggian gambar menyesuaikan agar aspeknya tidak terdistorsi */
+  display: block; /* Membuat gambar menjadi elemen block untuk mengatur margin */
+  margin: 0 auto; /* Mengatur margin secara otomatis agar gambar berada di tengah */
+}
+
+/* CSS untuk animasi slide-up pada form */
+@keyframes slide-up {
+  0% {
+    opacity: 0; /* Awal animasi memiliki opacity 0 (tidak terlihat) */
+    transform: translateY(50px); /* Awal animasi translasi Y sejauh 50 piksel ke atas */
+  }
+  100% {
+    opacity: 1; /* Akhir animasi memiliki opacity 1 (terlihat) */
+    transform: translateY(0); /* Akhir animasi translasi Y direset ke 0 */
+  }
+}
+
+/* CSS untuk mengatur tampilan form */
+form {
+  width: 300px; /* Lebar form 300 piksel */
+  margin: auto; /* Mengatur margin secara otomatis agar form berada di tengah */
+  padding: 20px; /* Padding 20 piksel di dalam form */
+  border-radius: 5px; /* Mengatur sudut melengkung form */
+  animation: slide-up 1s ease; /* Menetapkan animasi slide-up dengan durasi 1 detik dan fungsi timing ease */
+  margin-top: 5%; /* Margin atas 5% dari tampilan */
+  backdrop-filter: blur(5px); /* Menambahkan efek blur pada latar belakang */
+  background-color: rgba(255, 255, 255, 0.192); /* Menambahkan transparansi pada latar belakang */
+}
+
+/* CSS untuk mengatur tampilan label */
+label {
+  display: block; /* Membuat label menjadi elemen block agar tampil secara vertikal */
+  margin-bottom: 5px; /* Mengatur margin bawah 5 piksel pada label */
+  color: #ffffff; /* Mengatur warna teks pada label menjadi putih */
+}
+
+/* CSS untuk mengatur tampilan input field dengan id "username" dan "password" dalam class "form-group" */
+.form-group #username, #password {
+  width: 94%; /* Lebar input field 94% dari kontainer */
+  padding: 8px; /* Padding 8 piksel di dalam input field */
+  margin-bottom: 10px; /* Mengatur margin bawah 10 piksel pada input field */
+  border: 1px solid #ccc; /* Mengatur border input field dengan warna #ccc */
+  border-radius: 3px; /* Mengatur sudut melengkung border input field */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan class "login-options" */
+.login-options {
+  display: flex; /* Mengatur tampilan elemen menjadi flexbox */
+  justify-content: space-between; /* Mengatur penyebaran elemen secara merata */
+  font-size: small; /* Mengatur ukuran font kecil pada elemen */
+  align-items: center; /* Mengatur penyesuaian elemen secara vertikal */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan class "remember-me" */
+.remember-me {
+  display: flex; /* Mengatur tampilan elemen menjadi flexbox */
+  align-items: center; /* Mengatur penyesuaian elemen secara vertikal */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan class "forgot-password" */
+.forgot-password {
+  text-decoration: none; /* Menghapus dekorasi tautan */
+  color: blue; /* Mengatur warna teks menjadi biru */
+  font-size: 14px; /* Mengatur ukuran font menjadi 14 piksel */
+}
+
+/* CSS untuk mengatur tampilan elemen dengan id "login" dalam class "form-group" */
+.form-group #login {
+  width: 50%; /* Lebar elemen login 50% dari kontainer */
+  margin: 0 auto; /* Mengatur margin secara otomatis agar elemen login berada di tengah */
+  display: block; /* Membuat elemen login menjadi elemen block untuk mengatur margin */
+  padding: 10px; /* Padding 10 piksel di dalam elemen login */
+  background-color: #385ebf; /* Mengatur warna latar belakang elemen login menjadi biru */
+  color: #fff; /* Mengatur warna teks elemen login menjadi putih */
+  border: none; /* Menghapus border pada elemen login */
+  cursor: pointer; /* Mengubah kursor saat diarahkan ke elemen login */
+  margin-top: 15px; /* Mengatur margin atas 15 piksel pada elemen login */
+  border-radius: 10px; /* Mengatur sudut melengkung elemen login */
+}
